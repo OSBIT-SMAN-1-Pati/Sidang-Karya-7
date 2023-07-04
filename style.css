@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+.navigasi {
+    display: inline-flex;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid #d32f2f;
+    overflow-x: hidden  ;
+}
+
+.garuda {
+    margin-top: 10px;
+    padding: 8px 30px;
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255) ;
+    z-index: 999;
+    text-shadow: 1px 1px black;
+    width: fit-content;
+    white-space: nowrap;
+    font-family: 'bebas neue', sans-serif;
+    
+}
+.kontainer-judul {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+}
+.navigasi img {
+    padding-top: 8px;
+}
+nav .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+    display: inline-flex;
+}
+nav .nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 30px;
+    transition: all .4s ease;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'poppins';
+}
+nav{
+    display: flex;
+    justify-content:right;
+    width: 100%;
+    z-index: 999;   
+    padding-right: 20px;
+}
+nav .nav-list{
+    display: flex;
+    list-style: none;
+    margin: 20px 0;   
+}
+nav .nav-list li{
+    font-family: century;
+}
+nav .nav-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 30px;
+    transition: all .4s ease;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'poppins';
+}
+.navigasi nav .nav-list li a:hover{
+    border-radius: 30px;
+    background: #fff;
+    color: #d32f2f;
+    transition: .4s;
+}
+
+.navigasi img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 6px;
+    padding: 2px;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: #23242a;
+    background: url(bgbgbg.png) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+  
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:white;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width:100vw ;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+  
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:#d32f2f;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width:100vw ;
+    justify-content: center;
+    font-family: sans-serif;
+    top: 35%;
+}
+
+#jadwal{
+    display: flex;
+    flex-direction: column;
+    background: #23242a;
+    background: url(bgbgbg.png) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10vh;
+    
+}
+.jadwal .judul {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+}
+table td {
+    padding: 10px;
+}
+table th {
+    padding: 10px;
+}
+.tabel{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10vh;
+
+
+}
+
+#ujian {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: #23242a;
+    background: url(bgbgbg.png) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%; 
+}
+#ujian .judul {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    
+}
+#ujian .tabel{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    
+}
+#ujian .tabel .judul-tabel {
+    background-color: #d32f2f;
+ 
+}
+#ujian .tabel button {
+    background-color: rgb(55, 78, 211);
+    color: #fff;
+    border: rgb(55, 78, 211);
+    padding: 3px;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+#Tugas .tabel button {
+    background-color: rgb(55, 78, 211);
+    color: #fff;
+    border: rgb(55, 78, 211);
+    padding: 3px;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+#jurnal-literasi .tabel button {
+    background-color: rgb(55, 78, 211);
+    color: #fff;
+    border: rgb(55, 78, 211);
+    padding: 3px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#ujian .tabel button:hover {
+    background-color: rgb(30, 49, 158);
+    border: rgb(30, 49, 158);
+
+}
+
+#Tugas .tabel button:hover {
+    background-color: rgb(30, 49, 158);
+    border: rgb(30, 49, 158);
+
+}
+
+#jurnal-literasi .tabel button:hover {
+    background-color: rgb(30, 49, 158);
+    border: rgb(30, 49, 158);
+}
+
+#ujian .tabel .putih {
+    color: #d32f2f;
+    background-color: #fff;
+}
+
+#Tugas {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: #23242a;
+    background: url(bgbgbg.png) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%; 
+}
+.judul {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+.tabel{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+.judul-tabel {
+    background-color: #d32f2f;
+   
+}
+.tabel button {
+    background-color: rgb(55, 78, 211);
+    color: #fff;
+    border: rgb(55, 78, 211);
+    padding: 3px;
+    border-radius: 10px;
+}
+.putih {
+    color: #d32f2f;
+    background-color: #fff;
+}
+
+#jurnal-literasi {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: #23242a;
+    background: url(bgbgbg.png) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%; 
+}
+.button-literasi {
+    margin-left: 340px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+.button-literasi a {
+    text-decoration: none;
+    color: white;
+}
+.kerjakan a {
+    text-decoration: none;
+    color: #fff;
+}
